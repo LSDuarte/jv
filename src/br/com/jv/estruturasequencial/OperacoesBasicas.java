@@ -1,5 +1,7 @@
 package br.com.jv.estruturasequencial;
 
+import java.util.Locale;
+
 public class OperacoesBasicas {
 
 	public static void main(String[] args) {
@@ -25,6 +27,10 @@ public class OperacoesBasicas {
 		System.out.printf("%.1f%n", x);
 		System.out.printf("%.2f%n", x); /*formatando qtd de casas decimais*/
 		System.out.printf("%.4f%n", x);
+		
+		System.out.println("----------------------------");
+		Locale.setDefault(Locale.US); /* necessario configurar o programa para us - para ficar com .*/
+		System.out.printf("%.4f%n", x); 
 	}
 	
 }
