@@ -22,6 +22,17 @@ public class Casting3 {
 
 		System.out.println(resultado1);
 		System.out.println(resultado2);
+		
+		System.out.println("--------------------");
+
+		double aa;
+		int bbb;
+		
+		aa = 5.0;
+		//bbb = aa; da erro 
+		bbb = (int) aa;
+		
+		System.out.println(bbb);
 
 	}
 }
