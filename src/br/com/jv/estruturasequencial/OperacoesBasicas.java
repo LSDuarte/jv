@@ -31,6 +31,12 @@ public class OperacoesBasicas {
 		System.out.println("----------------------------");
 		Locale.setDefault(Locale.US); /* necessario configurar o programa para us - para ficar com .*/
 		System.out.printf("%.4f%n", x); 
+		
+		System.out.println("----------------------------");
+		System.out.println("Resultado " + x + " Metros"); /*Concatenando informações*/
+		
+		System.out.println("----------------------------");
+		System.out.printf("Resultado = %.2f Metros%n", x); /*Concatenando informações e formatando casas decimais*/
 	}
 	
 }
