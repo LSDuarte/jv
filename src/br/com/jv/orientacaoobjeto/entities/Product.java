@@ -12,8 +12,14 @@ public class Product {
 	public void addProducts(int qtd) {
 		this.quantity += qtd;
 	}
-	
+
 	public void removeProducts(int qtd) {
 		this.quantity -= qtd;
 	}
+
+	@Override
+	public String toString() {
+		return this.name + ", " + this.price + ", " + this.quantity;	
+	}
+
 }

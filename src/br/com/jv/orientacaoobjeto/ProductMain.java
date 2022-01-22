@@ -23,6 +23,8 @@ public class ProductMain {
 		System.out.print("Quantity: ");
 		product.quantity = sc.nextInt();
 		
+		System.out.println(product.toString());
+		//System.out.println(product.name + ", " + product.price + ", " + product.quantity);
 		sc.close();
 	}
 
