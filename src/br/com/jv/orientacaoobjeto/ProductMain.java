@@ -23,8 +23,26 @@ public class ProductMain {
 		System.out.print("Quantity in stock: ");
 		product.quantity = sc.nextInt();
 		
-		System.out.println(product);
-		//System.out.println(product.name + ", " + product.price + ", " + product.quantity);
+		System.out.println();
+		System.out.println("Product data: " + product);
+
+		System.out.println();
+		System.out.print("Enter the number of products to be added in stock: ");
+		int qtdAdd = sc.nextInt(); 
+		product.addProducts(qtdAdd);
+		
+		System.out.println();
+		System.out.println("Updated data: " + product);
+		
+		
+		System.out.println();
+		System.out.print("Enter the number of products to be removed from stock: ");
+		int qtdRem = sc.nextInt(); 
+		product.removeProducts(qtdRem);
+		
+		System.out.println();
+		System.out.println("Updated data: " + product);
+		
 		sc.close();
 	}
 
