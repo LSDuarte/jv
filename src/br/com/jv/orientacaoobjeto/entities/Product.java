@@ -19,7 +19,13 @@ public class Product {
 
 	@Override
 	public String toString() {
-		return this.name + ", " + this.price + ", " + this.quantity;	
+		return name 
+			+ ", $ "
+			+ price
+			+ ", "
+			+ quantity
+			+ " units, Total: $ "
+			+ totalValueInStock();
 	}
 
 }

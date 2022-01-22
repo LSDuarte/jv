@@ -20,10 +20,10 @@ public class ProductMain {
 		System.out.print("Price: ");
 		product.price = sc.nextDouble();
 		
-		System.out.print("Quantity: ");
+		System.out.print("Quantity in stock: ");
 		product.quantity = sc.nextInt();
 		
-		System.out.println(product.toString());
+		System.out.println(product);
 		//System.out.println(product.name + ", " + product.price + ", " + product.quantity);
 		sc.close();
 	}
