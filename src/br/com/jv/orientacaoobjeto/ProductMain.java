@@ -22,6 +22,7 @@ public class ProductMain {
 		System.out.print("Quantity in stock: ");
 		int quantity = sc.nextInt();
 		Product product = new Product(name, price, quantity);
+		product.setName("Computer");
 
 		System.out.println();
 		System.out.println("Product data: " + product);
