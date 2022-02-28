@@ -9,11 +9,11 @@ public class Account {
 	public Account() {
 	}
 
-	public Account(int number, String holder, double balance) {
+	public Account(int number, String holder, double depositoInicial) {
 		super();
 		this.number = number;
 		this.holder = holder;
-		this.balance = balance;
+		desposit(depositoInicial);
 	}
 
 	public int getNumber() {
