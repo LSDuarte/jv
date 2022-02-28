@@ -4,6 +4,11 @@ public class Product {
 	public String name;
 	public double price;
 	public int quantity;
+	
+	// constrututor padrão
+	public Product() {
+		
+	}
 
 	public Product(String name, double price, int quantity) {
 		this.name = name;
@@ -11,6 +16,12 @@ public class Product {
 		this.quantity = quantity;
 	}
 
+	//sobrecarga - disponibilizar mais de uma opção da mesma operação.
+	public Product(String name, double price) {
+		this.name = name;
+		this.price = price;
+	}
+	
 	public double totalValueInStock() {
 		return this.price * this.quantity;
 	}
